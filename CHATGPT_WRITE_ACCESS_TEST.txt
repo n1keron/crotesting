@@ -1,2 +1,0 @@
-Write access test requested by the repository owner.
-Created to verify whether the connected GitHub integration can write to this repository.
