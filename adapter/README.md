@@ -13,7 +13,7 @@ Initial adapter for a custom UI over the installed CronosPRO 6.4 web interface.
 
 ## Run on Windows
 
-1. Set `CRONOS_BASE_URL` to the actual local CronosPRO web server URL, including port, for example `http://127.0.0.1:8080/`.
+1. Set `CRONOS_BASE_URL` to the actual local CronosPRO web server URL, including the configured port. For the current local setup, use `http://127.0.0.1:80/`.
 2. Create a virtual environment and install dependencies:
 
    ```powershell
