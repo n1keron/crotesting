@@ -219,6 +219,52 @@ def search(body: SearchRequest, request: Request) -> dict[str, Any]:
     return {"title": parsed["title"], "text": parsed["text"]}
 
 
+class PreviewRequest(BaseModel):
+    working_directory: str = Field(min_length=1, max_length=2048)
+    view_rows: int = Field(default=20, ge=1, le=500)
+
+
+@app.post("/api/search/preview")
+def preview_search(body: PreviewRequest, request: Request) -> dict[str, Any]:
+    """Open CronosPRO's read-only result-list view for the current selection."""
+    session = get_session(request.cookies.get("cronos_adapter_session"))
+    payload = {
+        "WorkingDirectory": body.working_directory,
+        "ViewRows": str(body.view_rows),
+        "PreView": "Просмотр",
+    }
+    encoded_payload = urlencode(payload, encoding="cp1251", errors="replace").encode("ascii")
+    result = cronos_request(
+        session, "POST", "CroInternal", data=encoded_payload,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+    )
+    html = decode_html(result)
+    soup = BeautifulSoup(html, "html.parser")
+    parsed = title_and_text(html)
+    records: list[dict[str, str]] = []
+    for link in soup.select("a[href]"):
+        href = link.get("href", "")
+        label = link.get_text(" ", strip=True)
+        if not label:
+            continue
+        # Only surface navigation links that appear to identify a record.
+        from urllib.parse import parse_qs, urlparse
+        params = parse_qs(urlparse(href).query)
+        sys_num = (params.get("SysNum") or params.get("sysNum") or [None])[0]
+        if sys_num:
+            records.append({"label": label, "sys_num": sys_num})
+    directory = next(
+        (el.get("value", "") for el in soup.select('input[name="WorkingDirectory"]') if el.get("value")),
+        body.working_directory,
+    )
+    return {
+        "title": parsed["title"],
+        "text": parsed["text"],
+        "working_directory": directory,
+        "records": records,
+    }
+
+
 @app.get("/api/search/status")
 def search_status(working_directory: str, request: Request) -> dict[str, Any]:
     session = get_session(request.cookies.get("cronos_adapter_session"))
