@@ -296,8 +296,19 @@ def view_record(
             "ViewRecord": "View",
         },
     )
-    parsed = title_and_text(decode_html(result))
-    return {"title": parsed["title"], "text": parsed["text"]}
+    html = decode_html(result)
+    parsed = title_and_text(html)
+    soup = BeautifulSoup(html, "html.parser")
+    fields: list[dict[str, str]] = []
+    for row in soup.select("table tr"):
+        cells = row.find_all(["td", "th"], recursive=False)
+        if len(cells) < 2:
+            continue
+        label = cells[0].get_text(" ", strip=True).rstrip(":")
+        value = " | ".join(cell.get_text(" ", strip=True) for cell in cells[1:])
+        if label and value and label != value:
+            fields.append({"label": label, "value": value})
+    return {"title": parsed["title"], "text": parsed["text"], "fields": fields}
 
 
 @app.post("/api/session/logout")
