@@ -302,11 +302,16 @@ def preview_search(body: PreviewRequest, request: Request) -> dict[str, Any]:
         (el.get("value", "") for el in soup.select('input[name="WorkingDirectory"]') if el.get("value")),
         body.working_directory,
     )
+    # CronosPRO often reports the total selection count in the page text,
+    # which may be larger than the number of record links rendered in this view.
+    count_match = re.search(r"Отобрано\s+записей\s*[:№]?\s*(\d+)", parsed["text"], flags=re.IGNORECASE)
+    total_records = int(count_match.group(1)) if count_match else len(records)
     return {
         "title": parsed["title"],
         "text": parsed["text"],
         "working_directory": directory,
         "records": records,
+        "total_records": total_records,
     }
 
 
