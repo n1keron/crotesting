@@ -20,7 +20,7 @@ _sessions: dict[str, requests.Session] = {}
 
 class LoginRequest(BaseModel):
     username: str = Field(min_length=1, max_length=256)
-    password: str = Field(min_length=1, max_length=1024)
+    password: str = Field(default="", max_length=1024)
 
 
 class SearchRequest(BaseModel):
