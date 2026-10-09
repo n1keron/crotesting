@@ -221,13 +221,13 @@ def cronos_field_label(element: Any) -> str:
         cell_text = current_cell.get_text(" ", strip=True) if current_cell else ""
         for candidate in (cell_text, row.get_text(" ", strip=True)):
             candidate = candidate.strip(" :：\t\r\n")
-            if candidate and candidate != name and not __import__("re").fullmatch(r"Field\\d+", candidate, flags=__import__("re").I):
+            if candidate and candidate != name and not re.fullmatch(r"Field\d+", candidate, flags=re.I):
                 return candidate
 
     previous = element.find_previous(string=True)
     if previous:
         text = str(previous).strip(" :：\t\r\n")
-        if text and text != name and not __import__("re").fullmatch(r"Field\\d+", text, flags=__import__("re").I):
+        if text and text != name and not re.fullmatch(r"Field\d+", text, flags=re.I):
             return text
     return name
 
