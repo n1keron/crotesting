@@ -175,7 +175,7 @@ def select_bank(body: SelectBankRequest, request: Request) -> dict[str, Any]:
     }
 
 
-@app.post("/api/session/base-options")
+@app.get("/api/session/base-options")
 def base_options(request: Request, working_directory: str = Query(min_length=1, max_length=2048)) -> dict[str, Any]:
     session = get_session(request.cookies.get("cronos_adapter_session"))
     payload = {"WorkingDirectory": working_directory, "SelectBase": "Выбор базы/запроса по образцу"}
