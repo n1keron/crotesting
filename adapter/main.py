@@ -8,7 +8,7 @@ from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
-from fastapi import FastAPI, Header, HTTPException, Response
+from fastapi import FastAPI, HTTPException, Query, Request, Response
 from pydantic import BaseModel, Field
 
 CRONOS_BASE_URL = os.getenv("CRONOS_BASE_URL", "http://127.0.0.1:8080/").rstrip("/") + "/"
@@ -88,8 +88,8 @@ def login(body: LoginRequest, response: Response) -> dict[str, str]:
 
 
 @app.post("/api/search")
-def search(body: SearchRequest, cronos_adapter_session: str | None = Header(default=None, alias="X-Cronos-Session")) -> dict[str, Any]:
-    session = get_session(cronos_adapter_session)
+def search(body: SearchRequest, request: Request) -> dict[str, Any]:
+    session = get_session(request.cookies.get("cronos_adapter_session"))
     # Strictly read-only: do not forward form actions associated with correction,
     # deletion, saving, cancellation, or other state-changing operations.
     payload = {"WorkingDirectory": body.working_directory, "SimpleFind": "Выполнить запрос"}
@@ -103,8 +103,8 @@ def search(body: SearchRequest, cronos_adapter_session: str | None = Header(defa
 
 
 @app.get("/api/search/status")
-def search_status(working_directory: str, cronos_adapter_session: str | None = Header(default=None, alias="X-Cronos-Session")) -> dict[str, Any]:
-    session = get_session(cronos_adapter_session)
+def search_status(working_directory: str, request: Request) -> dict[str, Any]:
+    session = get_session(request.cookies.get("cronos_adapter_session"))
     result = cronos_request(
         session, "GET", "CroInternal",
         params={"WorkingDirectory": working_directory, "Finding": "Поиск"},
@@ -115,12 +115,12 @@ def search_status(working_directory: str, cronos_adapter_session: str | None = H
 
 @app.get("/api/record")
 def view_record(
+    request: Request,
     working_directory: str,
     base: str = "1",
-    sys_num: str = Field(default="1", alias="sysNum"),
-    cronos_adapter_session: str | None = Header(default=None, alias="X-Cronos-Session"),
+    sys_num: str = Query(default="1", alias="sysNum"),
 ) -> dict[str, Any]:
-    session = get_session(cronos_adapter_session)
+    session = get_session(request.cookies.get("cronos_adapter_session"))
     result = cronos_request(
         session, "GET", "CroInternal",
         params={
@@ -137,9 +137,10 @@ def view_record(
 
 
 @app.post("/api/session/logout")
-def logout(response: Response, cronos_adapter_session: str | None = Header(default=None, alias="X-Cronos-Session")) -> dict[str, str]:
-    if cronos_adapter_session:
-        session = _sessions.pop(cronos_adapter_session, None)
+def logout(request: Request, response: Response) -> dict[str, str]:
+    token = request.cookies.get("cronos_adapter_session")
+    if token:
+        session = _sessions.pop(token, None)
         if session:
             session.close()
     response.delete_cookie("cronos_adapter_session")
