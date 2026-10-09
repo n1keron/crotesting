@@ -68,7 +68,7 @@ def health() -> dict[str, str]:
 
 
 @app.post("/api/session/login")
-def login(body: LoginRequest, response: Response) -> dict[str, str]:
+def login(body: LoginRequest, response: Response) -> dict[str, Any]:
     session = requests.Session()
     # Fetch the login page first so the server can issue its normal cookies.
     page = cronos_request(session, "GET", "index.html")
