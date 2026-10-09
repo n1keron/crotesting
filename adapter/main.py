@@ -2,9 +2,8 @@ from __future__ import annotations
 
 import os
 import secrets
-from html import unescape
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import urlencode, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -74,17 +73,46 @@ def login(body: LoginRequest, response: Response) -> dict[str, str]:
     action = form.get("action", "CroInternal") if form else "CroInternal"
     payload: dict[str, str] = {}
     if form:
-        for element in form.select('input[type="hidden"][name]'):
+        # Submit the successful controls from the actual legacy login form.
+        # UserId is a regular text input (not hidden), and Login is the submit
+        # button; both may be required by CroInternal.
+        for element in form.select("input[name]"):
+            input_type = (element.get("type") or "text").lower()
+            if input_type == "reset" or input_type == "button":
+                continue
+            if input_type == "submit" and element.get("name") != "Login":
+                continue
             payload[element["name"]] = element.get("value", "")
     payload.update({"Name": body.username, "Password": body.password})
-    result = cronos_request(session, "POST", action, data=payload)
+    # CronosPRO's bundled HTML declares Windows-1251. requests' normal dict
+    # encoding uses UTF-8, so explicitly form-encode using the legacy charset.
+    encoded_payload = urlencode(payload, encoding="cp1251", errors="replace").encode("ascii")
+    result = cronos_request(
+        session,
+        "POST",
+        action,
+        data=encoded_payload,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+    )
     result_html = decode_html(result)
     result_text = title_and_text(result_html)
-    # Keep credentials and upstream cookies only in server memory.
+    combined = (result_text["title"] + "\\n" + result_text["text"]).casefold()
+    if "не опознаны имя пользователя или пароль" in combined:
+        session.close()
+        return {
+            "status": "rejected",
+            "page_title": result_text["title"],
+            "message": "CronosPRO отверг имя пользователя или пароль; рабочая сессия не создана.",
+        }
+    # Only retain a session when the returned page did not report a login error.
     token = secrets.token_urlsafe(32)
     _sessions[token] = session
     response.set_cookie("cronos_adapter_session", token, httponly=True, samesite="strict")
-    return {"status": "submitted", "page_title": result_text["title"], "message": "Проверьте, что CronosPRO открыл рабочую сессию."}
+    return {
+        "status": "submitted",
+        "page_title": result_text["title"],
+        "message": "Форма отправлена. Убедитесь, что CronosPRO открыл рабочую сессию.",
+    }
 
 
 @app.post("/api/search")
