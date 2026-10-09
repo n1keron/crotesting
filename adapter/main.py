@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import re
 import secrets
 from typing import Any
 from urllib.parse import urlencode, urljoin
@@ -198,8 +199,8 @@ def cronos_field_label(element: Any) -> str:
     explicit = element.get("aria-label") or element.get("title")
     if explicit and explicit.strip():
         return explicit.strip()
-    soup = element if isinstance(element, BeautifulSoup) else element
-    label = soup.find("label", attrs={"for": name}) if hasattr(soup, "find") else None
+    form = element.find_parent("form")
+    label = form.find("label", attrs={"for": name}) if form else None
     if label:
         text = label.get_text(" ", strip=True)
         if text:
@@ -214,7 +215,7 @@ def cronos_field_label(element: Any) -> str:
             # Walk from the closest preceding cell outward; ignore technical IDs.
             for cell in reversed(cells[:index]):
                 text = cell.get_text(" ", strip=True).strip(" :：\t\r\n")
-                if text and not __import__("re").fullmatch(r"Field\\d+", text, flags=__import__("re").I):
+                if text and not re.fullmatch(r"Field\d+", text, flags=re.I):
                     return text
         # Some CronosPRO templates put the caption and input in the same cell.
         cell_text = current_cell.get_text(" ", strip=True) if current_cell else ""
