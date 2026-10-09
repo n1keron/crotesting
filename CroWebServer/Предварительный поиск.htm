@@ -1,0 +1,30 @@
+<html>
+<SCRIPT LANGUAGE="javascript" src="%%RestoreScript%%">
+</SCRIPT>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>.small{font-family:arial;font-size:10pt}.smallinput{font-family:arial;font-size:9pt}</style>
+<head><title>Поиск</title></head>
+<body background="bg1.gif" onbeforeUnload="BeforeRestore();" onUnload="SelfRestore();">
+<FORM name="Restore" action="%%CGIURL%%" method="post">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="hidden" name="LastScreen" value="Восстановить">
+</FORM>
+<BR><BR><BR><BR><BR>
+<FORM action="%%CGIURL%%" method="post" onSubmit="clearTimeout(refreshID);SetCanClose();">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="hidden" name="FindingStop" value="1">
+<table ALIGN=CENTER FRAME=BOX RULES=NONE BORDER=4 CELLSPACING=2>
+<tr><td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;<td ALIGN=CENTER>&nbsp;<td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;
+<tr><td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;<td ALIGN=CENTER>%%Status%%<td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;
+<tr><td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;<td ALIGN=CENTER>&nbsp;<td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;
+<tr><td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;<td ALIGN=CENTER>&nbsp;<td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;
+<tr><td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;<td ALIGN=CENTER><INPUT type="submit" name="Finding" value="&nbsp;&nbsp;Стоп&nbsp;&nbsp;"><td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;</tr>
+<tr><td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;<td ALIGN=CENTER>&nbsp;<td ALIGN=CENTER>&nbsp;&nbsp;&nbsp;
+</table>
+</FORM>
+<a href="%%CGIURL%%?WorkingDirectory=%%WorkingDirectory%%&Finding=Поиск" onClick="SetCanClose();"></a>
+<SCRIPT LANGUAGE="javascript">
+refreshID=setTimeout("document.links[document.links.length-1].click()",3000);
+</SCRIPT>
+</body>
+</html>

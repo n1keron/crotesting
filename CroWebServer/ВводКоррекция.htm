@@ -1,0 +1,31 @@
+<html>
+<SCRIPT LANGUAGE="javascript" src="%%JavaScript%%">
+</SCRIPT>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>.small{font-family:arial;font-size:10pt}.smallinput{font-family:arial;font-size:9pt}</style>
+<body background="bg1.gif" onLoad="document.charset='windows-1251';var ChildWin;" onFocus="if(parseInt(document.Info.Child.value))ChildWin.focus();" onUnload="if(parseInt(document.Info.Child.value)){document.Info.Child.value=0;ChildWin.close();}%%IfEditLevel%%{if(!parseInt(document.Info.NormalClose.value)){CancelWin=window.open('',NewEditWinName(self),'resizable=yes,status=yes,scrollbars=yes');CancelWin.location.href='%%CGIURL%%?WorkingDirectory=%%JavaWorkingDirectory%%&EditLevel=%%EditLevel%%&AfterFind=Input';}}">
+<head><title>Ввод/Коррекция записей %%Chain%%</title></head>
+<H2>База: %%BaseName%%</H2><BR>
+<H2>Всего записей: %%RecordCount%%</H2><BR>
+<FORM name="Info">
+<INPUT type="hidden" name="Child" value="0">
+<INPUT type="hidden" name="NormalClose" value="0">
+</FORM>
+<FORM action="%%CGIURL%%">
+<table BORDER=0 CELLSPACING=0>
+<tr>
+%%Prev%%
+%%ViewExit%%
+%%Next%%
+<td ALIGN=CENTER>
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">&nbsp;&nbsp;
+<INPUT type="submit" name="GoToViewInput" value="На запись" onClick="if(parseInt(document.Info.Child.value)){ChildWin.focus();return false;}else {document.Info.NormalClose.value=1;return true;}">&nbsp;<INPUT name="GoToRecord" value="1" onFocus="if(parseInt(document.Info.Child.value))ChildWin.focus();">&nbsp;&nbsp;
+</tr>
+<tr>%%HrLine%%</tr>
+</table>
+</FORM>
+<table BORDER=0 CELLSPACING=0>
+%%RecordList%%
+</table>
+</body>
+</html>

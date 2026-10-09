@@ -1,0 +1,55 @@
+<html>
+<SCRIPT LANGUAGE="javascript" src="%%RestoreScript%%">
+</SCRIPT>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>.small{font-family:arial;font-size:10pt}.smallinput{font-family:arial;font-size:9pt}</style>
+<head>
+<title>Выбор базы/запроса по образцу</title>
+</head>
+<body background="bg1.gif" onbeforeUnload="BeforeRestore();" onUnload="SelfRestore();">
+<FORM name="Restore" action="%%CGIURL%%" method="post">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="hidden" name="LastScreen" value="Восстановить">
+</FORM>
+<table BORDER=0 CELLSPACING=0>
+<tr><td ALIGN=CENTER><H1>Выбор базы</H1></tr>
+</table>
+<table BORDER=0 CELLSPACING=0>
+<FORM action="%%CGIURL%%" method="post" onSubmit="SetCanClose();">
+<tr><td ALIGN=RIGHT>Имя пользователя:&nbsp;&nbsp;<td ALIGN=LEFT>%%UserName%%&nbsp;&nbsp;
+<td ALIGN=LEFT><INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="submit" name="Exit" value="Конец сессии"></tr>
+</FORM>
+<FORM action="%%CGIURL%%" method="post" onSubmit="SetCanClose();">
+<tr><td ALIGN=RIGHT>Имя банка:&nbsp;&nbsp;<td ALIGN=LEFT>%%BankName%%&nbsp;&nbsp;
+<td ALIGN=LEFT><INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="submit" name="SelectBank" value="Выбор банка"></tr>
+</FORM>
+<tr><td><hr><td><hr><td><hr></tr>
+</table>
+<table BORDER=0 CELLSPACING=0>
+<FORM action="%%CGIURL%%" method="post" onSubmit="SetCanClose();">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<tr><td ALIGN=left>Вид обработки:
+<tr><td ALIGN=left><INPUT type="radio" name="ReqType" value="Simple" checked>Простой запрос
+<tr><td ALIGN=left><INPUT type="radio" name="ReqType" value="Complex">Сложный запрос
+<tr><td ALIGN=left><INPUT type="radio" name="ReqType" value="Input">Ввод
+&nbsp;&nbsp;Количество строк на странице<INPUT name="ViewRows" value="20">
+<tr><td><hr><td><hr></tr>
+<tr><td ALIGN=left>Список баз: <SELECT name="Base">%%BaseList%%</SELECT>
+<td ALIGN=left><INPUT type="submit" name="BaseSelect" value="Выбрать базу"></tr>
+</FORM>
+</table>
+<br><tr><td><hr></tr>
+<table BORDER=0 CELLSPACING=0>
+<tr><td ALIGN=CENTER><H1>Выбор запроса по образцу</H1></tr>
+</table>
+<table BORDER=0 CELLSPACING=0>
+<FORM action="%%CGIURL%%" method="post" onSubmit="SetCanClose();">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<tr><td ALIGN=RIGHT>Список запросов по образцу:<SELECT name="QBE">%%QBEList%%</SELECT>
+<td ALIGN=RIGHT><INPUT type="submit" name="QBESelect" value="Выбрать запрос по образцу"></tr>
+</FORM>
+</table>
+</body>
+</html>

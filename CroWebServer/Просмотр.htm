@@ -1,0 +1,31 @@
+<html>
+<SCRIPT LANGUAGE="javascript" src="%%RestoreScript%%">
+</SCRIPT>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>.small{font-family:arial;font-size:10pt}.smallinput{font-family:arial;font-size:9pt}</style>
+<head><title>Просмотр отобранных записей</title></head>
+<body background="bg1.gif" onbeforeUnload="BeforeRestore();" onUnload="SelfRestore();">
+<FORM name="Restore" action="%%CGIURL%%" method="post">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="hidden" name="LastScreen" value="Восстановить">
+</FORM>
+<H1>Отобрано записей %%RecordCount%%</H1><BR>
+<FORM action="%%CGIURL%%" onSubmit="SetCanClose();">
+<table BORDER=0 CELLSPACING=0>
+<tr>
+%%Prev%%
+%%ViewExit%%
+%%Next%%
+<td ALIGN=CENTER>
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">&nbsp;&nbsp;
+<INPUT type="submit" name="GoToView" value="На запись">&nbsp;
+<INPUT name="GoToRecord" value="%%GoToRecord%%">&nbsp;&nbsp;
+</tr>
+<tr>%%HrLine%%</tr>
+</table>
+</FORM>
+<table BORDER=0 CELLSPACING=0>
+%%RecordList%%
+</table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<SCRIPT LANGUAGE="javascript" src="%%JavaScript%%">
+</SCRIPT>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>.small{font-family:arial;font-size:10pt}.smallinput{font-family:arial;font-size:9pt}</style>
+<head><title>Ввод/Коррекция %%Chain%%</title></head>
+<body background="bg1.gif" onLoad="document.charset='windows-1251';var ChildWin;" onFocus="if(parseInt(document.Info.Child.value)){ChildWin=window.open('',document.Info.ChildWinName.value,'resizable=yes,status=yes,scrollbars=yes');ChildWin.focus();}" onUnload="CloseVocFind();if(parseInt(document.Info.Child.value)){document.Info.Child.value=0;ChildWin=window.open('',document.Info.ChildWinName.value,'resizable=yes,status=yes,scrollbars=yes');ChildWin.close();}if(parseInt(opener.document.Info.Child.value)){opener.document.Info.Child.value=0;if(!parseInt(document.Info.WinClosed.value)){document.Info.WinClosed.value=1;if(parseInt(document.InputEdit.SysNum.value,10)){opener.Info.NormalClose.value=1;opener.location.href='%%CGIURL%%?WorkingDirectory=%%JavaWorkingDirectory%%&Base=%%BaseNumber%%&SysNum=%%SysNum%%&EditLevel=%%EditLevel%%&CancelRecord=Cancel';}else opener.focus();}}">
+<FORM name="Info">
+<INPUT type="hidden" name="Child" value="0">
+<INPUT type="hidden" name="HttpHost" value="%%HttpHost%%">
+<INPUT type="hidden" name="WinClosed" value="0">
+<INPUT type="hidden" name="ChildWinName">
+</FORM>
+<FORM name="InputEdit" action="%%CGIURL%%" method="post" onSubmit="VocSelSet(this);">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="hidden" name="Base" value="%%BaseNumber%%">
+<INPUT type="hidden" name="SysNum" value="%%SysNum%%">
+<INPUT type="hidden" name="EditLevel" value="%%EditLevel%%">
+<TABLE BORDER=4 CELLSPACING=2 CELLPADDING=2 WIDTH="100%">
+<CAPTION>Ввод/Коррекция : база %%BaseName%% : запись N %%SysNum%%</CAPTION>
+<TR><TH class="small">Название поля<TH class="small">Значения поля
+<INPUT type="hidden" name="EditMultiWin" value="%%EditMultiWin%%">
+<INPUT type="hidden" name="EditMultiLinkWin" value="%%EditMultiLinkWin%%">
+<INPUT type="hidden" name="EditMultiLinks" value="">
+%%FieldList%%
+</table>
+<TABLE BORDER=0 CELLSPACING=0 WIDTH="100%">
+<tr><td><hr><td><hr></tr>
+<tr>
+<td ALIGN=center><INPUT type="submit" name="SaveRecord" value="Сохранить запись" onClick="if(parseInt(document.Info.Child.value)){ChildWin.focus();return false;}return RecordSave();">
+&nbsp;&nbsp;<td ALIGN=left><INPUT type="submit" name="CancelRecord" value="Отмена" onClick="if(parseInt(document.Info.Child.value)){ChildWin.focus();return false;}return ClearRecordForm();">
+</table>
+</FORM>
+</body>
+</html>

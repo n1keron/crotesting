@@ -1,0 +1,1127 @@
+
+=====================================================
+	01.05.25 01:11:31
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 74444800
+	PeakWorkingSetSize: 93478912
+	PrivateUsage: 53792768
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 1147195392
+	KernelTotal: 1732935680
+	CommitTotal: 301621248
+
+	Handles: 430
+	Threads: 10
+	GDI objects: 542
+	USER objects: 270
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:763FD424
+EAX=0C7AF670  EBX=074BF880  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0C7AF6CC  ESP=0C7AF670  EIP=763FD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:763FD424 (0xE06D7363 0x00000001 0x00000003 0x0C7AF6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0C7AF714 0x0182B2F4 0x019D92F0 0x0C7AF728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0C7AFB78 0x074826B0 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0C7AFA60 0x0C7AF7E0 0x0C7AF880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	01.05.25 01:11:56
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 70795264
+	PeakWorkingSetSize: 89722880
+	PrivateUsage: 53346304
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 1137152000
+	KernelTotal: 1734275072
+	CommitTotal: 308658176
+
+	Handles: 430
+	Threads: 12
+	GDI objects: 501
+	USER objects: 227
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:763FD424
+EAX=0C93F670  EBX=074BE030  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0C93F6CC  ESP=0C93F670  EIP=763FD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:763FD424 (0xE06D7363 0x00000001 0x00000003 0x0C93F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0C93F714 0x0182B2F4 0x019D92F0 0x0C93F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0C93FB78 0x074831E8 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0C93FA60 0x0C93F7E0 0x0C93F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	01.05.25 01:15:44
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: ђІ
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 73306112
+	PeakWorkingSetSize: 92545024
+	PrivateUsage: 54259712
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 1153671168
+	KernelTotal: 1735475200
+	CommitTotal: 298442752
+
+	Handles: 426
+	Threads: 9
+	GDI objects: 567
+	USER objects: 266
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 57F0023:763FD424
+EAX=0A34F670  EBX=074A76C8  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0A34F6CC  ESP=0A34F670  EIP=763FD424  FLG=00000212
+CS=57F0023   DS=753002B  SS=002B  ES=FFFF002B   FS=0053  GS=FFFF002B
+57F0023:763FD424 (0xE06D7363 0x00000001 0x00000003 0x0A34F6F8) KERNELBASE.dll
+57F0023:00FDAC4E (0x0A34F714 0x0182B2F4 0x019D92F0 0x0A34F728) Cronos.exe
+57F0023:00EAE1BD (0xFFFFFFFF 0x0A34FB78 0x07475260 0x0058C517) Cronos.exe
+57F0023:00EACF34 (0xFFFFFFFF 0x0A34FA60 0x0A34F7E0 0x0A34F880) Cronos.exe
+57F0023:0058C517 (0xFD01142E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	01.05.25 01:16:36
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: рdґ
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 74309632
+	PeakWorkingSetSize: 92545024
+	PrivateUsage: 54509568
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 1159184384
+	KernelTotal: 1735229440
+	CommitTotal: 299122688
+
+	Handles: 433
+	Threads: 9
+	GDI objects: 568
+	USER objects: 266
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:763FD424
+EAX=09B4F670  EBX=074AC6A0  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=09B4F6CC  ESP=09B4F670  EIP=763FD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:763FD424 (0xE06D7363 0x00000001 0x00000003 0x09B4F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x09B4F714 0x0182B2F4 0x019D92F0 0x09B4F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x09B4FB78 0x07476C68 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x09B4FA60 0x09B4F7E0 0x09B4F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	01.05.25 01:19:12
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 1
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 94330880
+	PeakWorkingSetSize: 97562624
+	PrivateUsage: 64720896
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 1156333568
+	KernelTotal: 1742000128
+	CommitTotal: 82751488
+
+	Handles: 1272
+	Threads: 20
+	GDI objects: 629
+	USER objects: 355
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 57F0023:763FD424
+EAX=1403F0F8  EBX=07664A98  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=3D3D3D3D  EBP=1403F150  ESP=1403F0F8  EIP=763FD424  FLG=00000212
+CS=57F0023   DS=002B  SS=002B  ES=002B   FS=57F0053  GS=7725002B
+57F0023:763FD424 (0xE06D7363 0x00000001 0x00000003 0x1403F17C) KERNELBASE.dll
+57F0023:00FDAC4E (0x1403F198 0x0182B2F4 0x019D92F0 0x1403F1AC) Cronos.exe
+57F0023:00EAE1BD (0xF4F4F4F4 0x1403F5FC 0x07474FB8 0x0058C517) Cronos.exe
+57F0023:00EACF34 (0xF4F4F4F4 0x1403F4E4 0x1403F264 0x1403F304) Cronos.exe
+57F0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	01.05.25 01:19:19
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 1
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 93392896
+	PeakWorkingSetSize: 97562624
+	PrivateUsage: 64483328
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 1159258112
+	KernelTotal: 1741946880
+	CommitTotal: 80089088
+
+	Handles: 1265
+	Threads: 19
+	GDI objects: 635
+	USER objects: 361
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 57F0023:763FD424
+EAX=0B15EEC8  EBX=07664C50  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=3D3D3D3D  EBP=0B15EF20  ESP=0B15EEC8  EIP=763FD424  FLG=00000212
+CS=57F0023   DS=002B  SS=002B  ES=002B   FS=57F0053  GS=7725002B
+57F0023:763FD424 (0xE06D7363 0x00000001 0x00000003 0x0B15EF4C) KERNELBASE.dll
+57F0023:00FDAC4E (0x0B15EF68 0x0182B2F4 0x019D92F0 0x0B15EF7C) Cronos.exe
+57F0023:00EAE1BD (0xF4F4F4F4 0x0B15F3CC 0x07475A58 0x0058C517) Cronos.exe
+57F0023:00EACF34 (0xF4F4F4F4 0x0B15F2B4 0x0B15F034 0x0B15F0D4) Cronos.exe
+57F0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 02:25:37
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 72998912
+	PeakWorkingSetSize: 91820032
+	PrivateUsage: 54751232
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 567255040
+	KernelTotal: 1267105792
+	CommitTotal: 4174495744
+
+	Handles: 453
+	Threads: 12
+	GDI objects: 499
+	USER objects: 225
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0D49F670  EBX=076AE3E8  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0D49F6CC  ESP=0D49F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0D49F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0D49F714 0x0182B2F4 0x019D92F0 0x0D49F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0D49FB78 0x07674530 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0D49FA60 0x0D49F7E0 0x0D49F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 04:21:43
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 74268672
+	PeakWorkingSetSize: 77770752
+	PrivateUsage: 56078336
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 459878400
+	KernelTotal: 1405341696
+	CommitTotal: 3994865664
+
+	Handles: 445
+	Threads: 10
+	GDI objects: 504
+	USER objects: 233
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0CF9F670  EBX=075B0840  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0CF9F6CC  ESP=0CF9F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0CF9F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0CF9F714 0x0182B2F4 0x019D92F0 0x0CF9F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0CF9FB78 0x077D5650 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0CF9FA60 0x0CF9F7E0 0x0CF9F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 20:51:08
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 71929856
+	PeakWorkingSetSize: 75038720
+	PrivateUsage: 54456320
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2277179392
+	KernelTotal: 1003388928
+	CommitTotal: 2676715520
+
+	Handles: 439
+	Threads: 12
+	GDI objects: 502
+	USER objects: 233
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0CC9F670  EBX=06270AF8  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0CC9F6CC  ESP=0CC9F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0CC9F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0CC9F714 0x0182B2F4 0x019D92F0 0x0CC9F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0CC9FB78 0x06233670 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0CC9FA60 0x0CC9F7E0 0x0CC9F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 20:54:12
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: P(–
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 74702848
+	PeakWorkingSetSize: 79466496
+	PrivateUsage: 54874112
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2324180992
+	KernelTotal: 1008222208
+	CommitTotal: 2747944960
+
+	Handles: 450
+	Threads: 8
+	GDI objects: 516
+	USER objects: 272
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0846F670  EBX=0626A310  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0846F6CC  ESP=0846F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0846F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0846F714 0x0182B2F4 0x019D92F0 0x0846F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0846FB78 0x06233BC0 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0846FA60 0x0846F7E0 0x0846F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 20:54:48
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: hu“
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 76783616
+	PeakWorkingSetSize: 79466496
+	PrivateUsage: 55398400
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2447216640
+	KernelTotal: 1003520000
+	CommitTotal: 2584973312
+
+	Handles: 456
+	Threads: 9
+	GDI objects: 544
+	USER objects: 310
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0846F670  EBX=06193C28  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=20CEC8D4  EBP=0846F6CC  ESP=0846F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0846F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0846F714 0x0182B2F4 0x019D92F0 0x0846F728) Cronos.exe
+0023:00EAE1BD (0x833B2350 0x0846FB78 0x06234330 0x0058C517) Cronos.exe
+0023:00EACF34 (0x833B2350 0x0846FA60 0x0846F7E0 0x0846F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 20:55:16
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: аиF
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 76324864
+	PeakWorkingSetSize: 79466496
+	PrivateUsage: 54898688
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2441314304
+	KernelTotal: 1008152576
+	CommitTotal: 2586513408
+
+	Handles: 457
+	Threads: 9
+	GDI objects: 509
+	USER objects: 316
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0846F670  EBX=06193C28  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=20CEC8D4  EBP=0846F6CC  ESP=0846F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0846F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0846F714 0x0182B2F4 0x019D92F0 0x0846F728) Cronos.exe
+0023:00EAE1BD (0x833B2350 0x0846FB78 0x06234908 0x0058C517) Cronos.exe
+0023:00EACF34 (0x833B2350 0x0846FA60 0x0846F7E0 0x0846F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 20:55:23
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: аиF
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 75440128
+	PeakWorkingSetSize: 79466496
+	PrivateUsage: 56012800
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2451521536
+	KernelTotal: 1007988736
+	CommitTotal: 2584924160
+
+	Handles: 458
+	Threads: 9
+	GDI objects: 505
+	USER objects: 310
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 59F0023:74AFD424
+EAX=0846F670  EBX=06193BD8  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=20CEC8D4  EBP=0846F6CC  ESP=0846F670  EIP=74AFD424  FLG=00000212
+CS=59F0023   DS=624002B  SS=624002B  ES=76F5002B   FS=0053  GS=62A002B
+59F0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0846F6F8) KERNELBASE.dll
+59F0023:00FDAC4E (0x0846F714 0x0182B2F4 0x019D92F0 0x0846F728) Cronos.exe
+59F0023:00EAE1BD (0x833B2350 0x0846FB78 0x06233DE0 0x0058C517) Cronos.exe
+59F0023:00EACF34 (0x833B2350 0x0846FA60 0x0846F7E0 0x0846F880) Cronos.exe
+59F0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 20:56:51
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: аиa
+
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 78667776
+	PeakWorkingSetSize: 81928192
+	PrivateUsage: 56430592
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2404970496
+	KernelTotal: 1013686272
+	CommitTotal: 2670657536
+
+	Handles: 462
+	Threads: 10
+	GDI objects: 561
+	USER objects: 326
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0A61F670  EBX=06352028  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0A61F6CC  ESP=0A61F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0A61F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0A61F714 0x0182B2F4 0x019D92F0 0x0A61F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0A61FB78 0x062335E8 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0A61FA60 0x0A61F7E0 0x0A61F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 20:57:17
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: аиa
+
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 77541376
+	PeakWorkingSetSize: 81928192
+	PrivateUsage: 56438784
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2455486464
+	KernelTotal: 1009369088
+	CommitTotal: 2575011840
+
+	Handles: 464
+	Threads: 10
+	GDI objects: 564
+	USER objects: 330
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0A61F670  EBX=06269B90  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0A61F6CC  ESP=0A61F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0A61F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0A61F714 0x0182B2F4 0x019D92F0 0x0A61F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0A61FB78 0x06232F00 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0A61FA60 0x0A61F7E0 0x0A61F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 20:57:46
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: шВЫT¶с¶
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 77635584
+	PeakWorkingSetSize: 81928192
+	PrivateUsage: 56811520
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2550132736
+	KernelTotal: 1008795648
+	CommitTotal: 2567237632
+
+	Handles: 464
+	Threads: 9
+	GDI objects: 519
+	USER objects: 334
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 76EF0023:74AFD424
+EAX=0A61F670  EBX=06193D18  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0A61F6CC  ESP=0A61F670  EIP=74AFD424  FLG=00000212
+CS=76EF0023   DS=002B  SS=A61002B  ES=002B   FS=59F0053  GS=A61002B
+76EF0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0A61F6F8) KERNELBASE.dll
+76EF0023:00FDAC4E (0x0A61F714 0x0182B2F4 0x019D92F0 0x0A61F728) Cronos.exe
+76EF0023:00EAE1BD (0xFFFFFFFF 0x0A61FB78 0x062336F8 0x0058C517) Cronos.exe
+76EF0023:00EACF34 (0xFFFFFFFF 0x0A61FA60 0x0A61F7E0 0x0A61F880) Cronos.exe
+76EF0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 21:04:08
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 77819904
+	PeakWorkingSetSize: 101167104
+	PrivateUsage: 56426496
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2580410368
+	KernelTotal: 1020551168
+	CommitTotal: 2483806208
+
+	Handles: 477
+	Threads: 9
+	GDI objects: 516
+	USER objects: 333
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 76EF0023:74AFD424
+EAX=0A61F670  EBX=0639A2D8  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0A61F6CC  ESP=0A61F670  EIP=74AFD424  FLG=00000212
+CS=76EF0023   DS=002B  SS=A61002B  ES=002B   FS=59F0053  GS=A61002B
+76EF0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0A61F6F8) KERNELBASE.dll
+76EF0023:00FDAC4E (0x0A61F714 0x0182B2F4 0x019D92F0 0x0A61F728) Cronos.exe
+76EF0023:00EAE1BD (0xFFFFFFFF 0x0A61FB78 0x06232F00 0x0058C517) Cronos.exe
+76EF0023:00EACF34 (0xFFFFFFFF 0x0A61FA60 0x0A61F7E0 0x0A61F880) Cronos.exe
+76EF0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 21:06:06
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: :}л±=И
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 77418496
+	PeakWorkingSetSize: 101167104
+	PrivateUsage: 56852480
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2634752000
+	KernelTotal: 1020317696
+	CommitTotal: 2450915328
+
+	Handles: 480
+	Threads: 9
+	GDI objects: 517
+	USER objects: 335
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 76EF0023:74AFD424
+EAX=0A61F670  EBX=0639A148  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0A61F6CC  ESP=0A61F670  EIP=74AFD424  FLG=00000212
+CS=76EF0023   DS=002B  SS=A61002B  ES=002B   FS=59F0053  GS=A61002B
+76EF0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0A61F6F8) KERNELBASE.dll
+76EF0023:00FDAC4E (0x0A61F714 0x0182B2F4 0x019D92F0 0x0A61F728) Cronos.exe
+76EF0023:00EAE1BD (0xFFFFFFFF 0x0A61FB78 0x06233450 0x0058C517) Cronos.exe
+76EF0023:00EACF34 (0xFFFFFFFF 0x0A61FA60 0x0A61F7E0 0x0A61F880) Cronos.exe
+76EF0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 21:15:44
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: w#Y{ШNЋ‘
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 79327232
+	PeakWorkingSetSize: 101167104
+	PrivateUsage: 56582144
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2644316160
+	KernelTotal: 1022664704
+	CommitTotal: 2441605120
+
+	Handles: 473
+	Threads: 9
+	GDI objects: 525
+	USER objects: 345
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 76EF0023:74AFD424
+EAX=0B3AF670  EBX=0626F0E0  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0B3AF6CC  ESP=0B3AF670  EIP=74AFD424  FLG=00000212
+CS=76EF0023   DS=002B  SS=B3A002B  ES=002B   FS=59F0053  GS=B3A002B
+76EF0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0B3AF6F8) KERNELBASE.dll
+76EF0023:00FDAC4E (0x0B3AF714 0x0182B2F4 0x019D92F0 0x0B3AF728) Cronos.exe
+76EF0023:00EAE1BD (0xFFFFFFFF 0x0B3AFB78 0x06235B18 0x0058C517) Cronos.exe
+76EF0023:00EACF34 (0xFFFFFFFF 0x0B3AFA60 0x0B3AF7E0 0x0B3AF880) Cronos.exe
+76EF0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 21:16:31
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: X!–
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 79249408
+	PeakWorkingSetSize: 101167104
+	PrivateUsage: 57548800
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2652766208
+	KernelTotal: 1022750720
+	CommitTotal: 2439966720
+
+	Handles: 474
+	Threads: 9
+	GDI objects: 544
+	USER objects: 348
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0B3AF670  EBX=062B0EA0  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=C5CCCECD  EBP=0B3AF6CC  ESP=0B3AF670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0B3AF6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0B3AF714 0x0182B2F4 0x019D92F0 0x0B3AF728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0B3AFB78 0x06236640 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0B3AFA60 0x0B3AF7E0 0x0B3AF880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 21:23:05
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: Hz!
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 89636864
+	PeakWorkingSetSize: 96210944
+	PrivateUsage: 63078400
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2221830144
+	KernelTotal: 1015955456
+	CommitTotal: 2605432832
+
+	Handles: 641
+	Threads: 15
+	GDI objects: 560
+	USER objects: 257
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0C97F670  EBX=077A6E40  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0C97F6CC  ESP=0C97F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0C97F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0C97F714 0x0182B2F4 0x019D92F0 0x0C97F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0C97FB78 0x076772C8 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0C97FA60 0x0C97F7E0 0x0C97F880) Cronos.exe
+0023:0058C517 (0xD001102E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 21:25:25
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: ч0
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 91344896
+	PeakWorkingSetSize: 96210944
+	PrivateUsage: 62955520
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2501865472
+	KernelTotal: 1011961856
+	CommitTotal: 2416513024
+
+	Handles: 652
+	Threads: 11
+	GDI objects: 568
+	USER objects: 256
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0C97F670  EBX=077A6FD0  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0C97F6CC  ESP=0C97F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0C97F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0C97F714 0x0182B2F4 0x019D92F0 0x0C97F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0C97FB78 0x07672FD8 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0C97FA60 0x0C97F7E0 0x0C97F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 21:34:24
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 1
+	Имя пользователя: Admin
+
+	Компьютер: иy!
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 101650432
+	PeakWorkingSetSize: 120537088
+	PrivateUsage: 66650112
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 1690382336
+	KernelTotal: 1023254528
+	CommitTotal: 2755477504
+
+	Handles: 786
+	Threads: 14
+	GDI objects: 597
+	USER objects: 322
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0D27F670  EBX=077A6D00  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0D27F6CC  ESP=0D27F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0D27F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0D27F714 0x0182B2F4 0x019D92F0 0x0D27F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0D27FB78 0x07676580 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0D27FA60 0x0D27F7E0 0x0D27F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 21:55:10
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 74371072
+	PeakWorkingSetSize: 77660160
+	PrivateUsage: 54018048
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2334208000
+	KernelTotal: 1038114816
+	CommitTotal: 2872016896
+
+	Handles: 435
+	Threads: 9
+	GDI objects: 532
+	USER objects: 298
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0C99F670  EBX=076B29C0  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0C99F6CC  ESP=0C99F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0C99F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0C99F714 0x0182B2F4 0x019D92F0 0x0C99F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0C99FB78 0x07675010 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0C99FA60 0x0C99F7E0 0x0C99F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	03.05.25 22:25:07
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 74113024
+	PeakWorkingSetSize: 77586432
+	PrivateUsage: 53899264
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 2309218304
+	KernelTotal: 1046495232
+	CommitTotal: 2824744960
+
+	Handles: 432
+	Threads: 10
+	GDI objects: 536
+	USER objects: 272
+=====================================================
+Cronos.exe caused an Microsoft C++ Exception in module KERNELBASE.dll at 0023:74AFD424
+EAX=0C58F670  EBX=076ADBA0  ECX=00000003  EDX=00000000  ESI=00000000
+EDI=CED2CED4  EBP=0C58F6CC  ESP=0C58F670  EIP=74AFD424  FLG=00000212
+CS=0023   DS=002B  SS=20002B  ES=002B   FS=0053  GS=002B
+0023:74AFD424 (0xE06D7363 0x00000001 0x00000003 0x0C58F6F8) KERNELBASE.dll
+0023:00FDAC4E (0x0C58F714 0x0182B2F4 0x019D92F0 0x0C58F728) Cronos.exe
+0023:00EAE1BD (0xFFFFFFFF 0x0C58FB78 0x07674078 0x0058C517) Cronos.exe
+0023:00EACF34 (0xFFFFFFFF 0x0C58FA60 0x0C58F7E0 0x0C58F880) Cronos.exe
+0023:0058C517 (0x0000002E 0x00000000 0x00000000 0x00000001) Cronos.exe
+=====================================================
+	24.10.25 23:59:18
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 1
+	Имя пользователя: Admin
+
+	Компьютер: \х [†]хp7wкЁрюяяяФ\хфЇэ
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 170426368
+	PeakWorkingSetSize: 170639360
+	PrivateUsage: 469065728
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 4123197440
+	KernelTotal: 1808793600
+	CommitTotal: 348954624
+
+	Handles: 494
+	Threads: 9
+	GDI objects: 603
+	USER objects: 540
+=====================================================
+Cronos.exe caused an EXCEPTION_ACCESS_VIOLATION in module Cronos.exe at 0023:00D422B2
+EAX=00000000  EBX=00000000  ECX=00000000  EDX=00000000  ESI=FFFFFF3F
+EDI=0CF573A4  EBP=00000458  ESP=0CF56B1C  EIP=00D422B2  FLG=00010246
+CS=0023   DS=002B  SS=002B  ES=002B   FS=0053  GS=002B
+0023:00D422B2 (0x00000000 0x00000000 0x00000000 0x00000000) Cronos.exe
+=====================================================
+	25.10.25 00:00:42
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: \Јx†]Јp7wT‘ddюяяяФ\ЈфЇэ
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 159981568
+	PeakWorkingSetSize: 160010240
+	PrivateUsage: 464457728
+
+	PhysicalTotal: 3449712640
+	PhysicalAvailable: 87388160
+	KernelTotal: 1805783040
+	CommitTotal: 107712512
+
+	Handles: 409
+	Threads: 8
+	GDI objects: 353
+	USER objects: 151
+=====================================================
+Cronos.exe caused an EXCEPTION_ACCESS_VIOLATION in module Cronos.exe at 0023:00D422B2
+EAX=000006A2  EBX=FFFFFFFE  ECX=BB804956  EDX=BB807E66  ESI=000000E9
+EDI=06A373A4  EBP=000000D6  ESP=06A36B1C  EIP=00D422B2  FLG=00010202
+CS=0023   DS=002B  SS=002B  ES=002B   FS=0053  GS=002B
+0023:00D422B2 (0x00000000 0x00000000 0x00000000 0x00000000) Cronos.exe
+=====================================================
+	10.02.26 22:21:14
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 1
+	Имя пользователя: Admin
+
+	Компьютер: `TрRњ|`Tp“wд!A«юяяяL`TфЇэ
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 92815360
+	PeakWorkingSetSize: 144334848
+	PrivateUsage: 481230848
+
+	PhysicalTotal: 3449704448
+	PhysicalAvailable: 3985506304
+	KernelTotal: 1503723520
+	CommitTotal: 981606400
+
+	Handles: 634
+	Threads: 7
+	GDI objects: 445
+	USER objects: 309
+=====================================================
+Cronos.exe caused an EXCEPTION_ACCESS_VIOLATION in module Cronos.exe at 0023:00D422B2
+EAX=00000004  EBX=00001FDE  ECX=6D75636F  EDX=6D75638F  ESI=FFFFFFEE
+EDI=06547718  EBP=66000000  ESP=06546E90  EIP=00D422B2  FLG=00010202
+CS=0023   DS=002B  SS=002B  ES=002B   FS=0053  GS=002B
+0023:00D422B2 (0x00000000 0x00000000 0x00000000 0x00000000) Cronos.exe
+=====================================================
+	10.02.26 22:54:21
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: 
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 79327232
+	PeakWorkingSetSize: 142974976
+	PrivateUsage: 111652864
+
+	PhysicalTotal: 3449704448
+	PhysicalAvailable: 3959242752
+	KernelTotal: 1522253824
+	CommitTotal: 644616192
+
+	Handles: 402
+	Threads: 4
+	GDI objects: 416
+	USER objects: 267
+=====================================================
+Cronos.exe caused an EXCEPTION_ACCESS_VIOLATION in module Cronos.exe at 0023:00D422B2
+EAX=00000000  EBX=00000000  ECX=00000010  EDX=00000010  ESI=FFFFFFA1
+EDI=0278680C  EBP=00000005  ESP=02785F84  EIP=00D422B2  FLG=00010246
+CS=0023   DS=002B  SS=002B  ES=002B   FS=0053  GS=002B
+0023:00D422B2 (0x00000000 0x00000000 0x00000000 0x00000000) Cronos.exe
+=====================================================
+	10.02.26 23:04:56
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: Qx K‰tQxp“w}юЮXюяяяDQxфЇэ
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 76607488
+	PeakWorkingSetSize: 136900608
+	PrivateUsage: 110551040
+
+	PhysicalTotal: 3449704448
+	PhysicalAvailable: 3953971200
+	KernelTotal: 1524051968
+	CommitTotal: 598200320
+
+	Handles: 377
+	Threads: 3
+	GDI objects: 396
+	USER objects: 179
+=====================================================
+Cronos.exe caused an EXCEPTION_ACCESS_VIOLATION in module Cronos.exe at 0023:00D422B2
+EAX=00000005  EBX=00007FFF  ECX=74000000  EDX=74000028  ESI=000000A9
+EDI=02786814  EBP=03D80000  ESP=02785F8C  EIP=00D422B2  FLG=00010206
+CS=0023   DS=002B  SS=002B  ES=002B   FS=0053  GS=002B
+0023:00D422B2 (0x00000000 0x00000000 0x00000000 0x00000000) Cronos.exe
+=====================================================
+	12.02.26 00:13:02
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер:  
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 78585856
+	PeakWorkingSetSize: 128327680
+	PrivateUsage: 112435200
+
+	PhysicalTotal: 3449704448
+	PhysicalAvailable: 4056469504
+	KernelTotal: 2519302144
+	CommitTotal: 3897040896
+
+	Handles: 411
+	Threads: 4
+	GDI objects: 419
+	USER objects: 183
+=====================================================
+Cronos.exe caused an EXCEPTION_ACCESS_VIOLATION in module Cronos.exe at 0023:00D422B2
+EAX=00000002  EBX=00000002  ECX=00005970  EDX=00005980  ESI=00000003
+EDI=02785A48  EBP=00000005  ESP=027851C0  EIP=00D422B2  FLG=00010202
+CS=0023   DS=002B  SS=002B  ES=002B   FS=0053  GS=002B
+0023:00D422B2 (0x00000000 0x00000000 0x00000000 0x00000000) Cronos.exe
+=====================================================
+	12.02.26 00:16:39
+
+	Версия 6.4 - 26.05.16 12.00.00
+	Серийный номер: 0
+	Имя пользователя: Admin
+
+	Компьютер: ДL†????
+	Имя сессии: Console
+	Имя пользователя сессии: Chapa
+	Имя клиента: 
+	Версия ОС: Windows 8  (Build 9200)  
+
+	WorkingSetSize: 110800896
+	PeakWorkingSetSize: 134856704
+	PrivateUsage: 144699392
+
+	PhysicalTotal: 3449704448
+	PhysicalAvailable: 4053688320
+	KernelTotal: 2525016064
+	CommitTotal: 3946450944
+
+	Handles: 401
+	Threads: 5
+	GDI objects: 369
+	USER objects: 177
+=====================================================
+Cronos.exe caused an EXCEPTION_ACCESS_VIOLATION in module Cronos.exe at 0023:00D422B2
+EAX=00000000  EBX=00000001  ECX=3F3F3F3F  EDX=3F3F3F3F  ESI=0000007C
+EDI=09EF77F0  EBP=02180000  ESP=09EF6F68  EIP=00D422B2  FLG=00010246
+CS=0023   DS=002B  SS=002B  ES=002B   FS=0053  GS=002B
+0023:00D422B2 (0x00000000 0x00000000 0x00000000 0x00000000) Cronos.exe

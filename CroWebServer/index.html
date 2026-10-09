@@ -1,0 +1,38 @@
+<html>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<head><title>Вход в систему Cronos Pro</title></head>
+
+<body background="bg1.gif" onLoad="document.forms[0].Protocol.value=location.protocol;">
+<tr><td ALIGN=RIGHT><H1>Вход в систему Cronos PRO</H1></tr>
+<!-- <FORM action="CroInternal" method="post" target="new" onSubmit="newWin=open('','new','width=1000,height=600,resizable=yes,status=yes,scrollbars=yes');newWin.resizeTo(screen.availWidth,screen.availHeight);newWin.moveTo(0,0);alert('Окно небходимо закрыть');self.close();return true;">
+-->
+<FORM action="CroInternal" method="post">
+
+<INPUT type="hidden" name="text" value="000000">
+<INPUT type="hidden" name="bgcolor" value="C0C0C0">
+<INPUT type="hidden" name="bgcolor2" value="808080">
+<INPUT type="hidden" name="link" value="800000">
+<INPUT type="hidden" name="WorkingDirectory" value="D:\CronosPro 6.4\CroWebServer\">
+<INPUT type="hidden" name="HttpHostAdd" value="">
+<INPUT type="hidden" name="Protocol" value="">
+
+<table class="litle" BORDER=0 CELLSPACING=0>
+<tr><td><HR></tr>
+<tr><td ALIGN=RIGHT bgcolor="#808080">Имя пользователя:<INPUT name="Name"></tr>
+<tr><td ALIGN=RIGHT bgcolor="#808080">Пароль:<INPUT type="password" name="Password"></tr>
+<tr><td><hr></tr>
+<tr><td ALIGN=RIGHT bgcolor="#808080">Номер сессии:<INPUT name="UserId"></tr>
+<tr><td>Требуется только при разрыве связи</tr>
+<tr><td><hr></tr>
+<tr>
+<td ALIGN=RIGHT bgcolor="#808080">
+<INPUT type="submit" name="Login" value="Войти">
+<INPUT type="reset" value="Очистить"></tr>
+</table>
+</FORM>
+
+</body>
+<SCRIPT LANGUAGE="javascript">
+document.forms[0].Name.focus();
+</SCRIPT>
+</html>

@@ -1,0 +1,41 @@
+03.05 21:36:34 [Chapa] <DESKTOP-RAP04GR> (6.4)  C:\Users\Chapa\Desktop\базы\АЛТ Алтайский край - Криминал, ФСИН, ФКУ СИЗО -2 г. Бийск 2013 (фото) (15294)\Voc\CroBank.tad error=3 cause=3 offset=0 len=ffffffff readOnly=0
+09.10 10:23:02 [0xUser] <NOTEBOOK> (6.4) WARNING: could not register pipe Null Session, server will not be accessible from outside domain.
+
+09.10 10:23:02 [0xUser] <NOTEBOOK> (6.4) WARNING: only administrators can register a Null Session Pipe.
+
+09.10 10:23:58 [0xUser] <NOTEBOOK> (6.4) WARNING: could not register pipe Null Session, server will not be accessible from outside domain.
+
+09.10 10:23:58 [0xUser] <NOTEBOOK> (6.4) WARNING: only administrators can register a Null Session Pipe.
+
+09.10 10:34:42 [0xUser] <NOTEBOOK> (6.4) WARNING: could not register pipe Null Session, server will not be accessible from outside domain.
+
+09.10 10:34:42 [0xUser] <NOTEBOOK> (6.4) WARNING: only administrators can register a Null Session Pipe.
+
+09.10 10:34:54 [0xUser] <NOTEBOOK> (6.4) CroInternetServerThread::EndRunFirst
+09.10 10:35:10 [0xUser] <NOTEBOOK> (6.4) CroInternetServerThread::EndRunFirst
+09.10 10:35:41 [0xUser] <NOTEBOOK> (6.4) WARNING: could not register pipe Null Session, server will not be accessible from outside domain.
+
+09.10 10:35:41 [0xUser] <NOTEBOOK> (6.4) WARNING: only administrators can register a Null Session Pipe.
+
+09.10 10:36:01 [0xUser] <NOTEBOOK> (6.4) CroInternetServerThread::EndRunFirst
+09.10 11:11:25 [0xUser] <NOTEBOOK> (6.4) WARNING: could not register pipe Null Session, server will not be accessible from outside domain.
+
+09.10 11:11:25 [0xUser] <NOTEBOOK> (6.4) WARNING: only administrators can register a Null Session Pipe.
+
+09.10 11:12:40 [0xUser] <NOTEBOOK> (6.4) WARNING: could not register pipe Null Session, server will not be accessible from outside domain.
+
+09.10 11:12:40 [0xUser] <NOTEBOOK> (6.4) WARNING: only administrators can register a Null Session Pipe.
+
+09.10 11:12:50 [0xUser] <NOTEBOOK> (6.4) CroInternetServerThread::EndRunFirst
+09.10 11:18:14 [0xUser] <NOTEBOOK> (6.4) WARNING: could not register pipe Null Session, server will not be accessible from outside domain.
+
+09.10 11:18:14 [0xUser] <NOTEBOOK> (6.4) WARNING: only administrators can register a Null Session Pipe.
+
+09.10 11:18:23 [0xUser] <NOTEBOOK> (6.4) WARNING: could not register pipe Null Session, server will not be accessible from outside domain.
+
+09.10 11:18:23 [0xUser] <NOTEBOOK> (6.4) WARNING: only administrators can register a Null Session Pipe.
+
+09.10 11:20:33 [0xUser] <NOTEBOOK> (6.4) WARNING: could not register pipe Null Session, server will not be accessible from outside domain.
+
+09.10 11:20:33 [0xUser] <NOTEBOOK> (6.4) WARNING: only administrators can register a Null Session Pipe.
+

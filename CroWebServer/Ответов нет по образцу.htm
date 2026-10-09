@@ -1,0 +1,34 @@
+<html>
+<SCRIPT LANGUAGE="javascript" src="%%RestoreScript%%">
+</SCRIPT>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>.small{font-family:arial;font-size:10pt}.smallinput{font-family:arial;font-size:9pt}</style>
+<head><title>Ответов нет</title></head>
+<body background="bg1.gif" onbeforeUnload="BeforeRestore();" onUnload="SelfRestore();">
+<FORM name="Restore" action="%%CGIURL%%" method="post">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="hidden" name="LastScreen" value="Восстановить">
+</FORM>
+<table BORDER=0 CELLSPACING=0>
+<tr><td ALIGN=CENTER><H1>Ответов нет</H1></tr>
+</table>
+<table BORDER=0 CELLSPACING=0>
+<FORM action="%%CGIURL%%" target="_top" method="post" onSubmit="SetCanClose();">
+<tr><td ALIGN=RIGHT>Имя пользователя:&nbsp;&nbsp;<td ALIGN=LEFT>%%UserName%%&nbsp;&nbsp;
+<td ALIGN=LEFT><INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="submit" name="Exit" value="Конец сессии"></tr>
+</FORM>
+<FORM action="%%CGIURL%%" target="_top" method="post" onSubmit="SetCanClose();">
+<tr><td ALIGN=RIGHT>Имя банка:&nbsp;&nbsp;<td ALIGN=LEFT>%%BankName%%&nbsp;&nbsp;
+<td ALIGN=LEFT><INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="submit" name="SelectBank" value="Выбор банка"></tr>
+</FORM>
+<FORM action="%%CGIURL%%" target="_top" method="post" onSubmit="SetCanClose();">
+<tr><td ALIGN=RIGHT>Имя базы:&nbsp;&nbsp;<td ALIGN=LEFT>%%BaseName%%&nbsp;&nbsp;
+<td ALIGN=LEFT><INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="submit" name="SelectBase" value="Выбор базы/запроса по образцу"></tr>
+</FORM>
+<tr><td><hr><td><hr><td><hr></tr>
+</table>
+</body>
+</html>

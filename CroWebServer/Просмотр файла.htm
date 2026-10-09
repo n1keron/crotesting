@@ -1,0 +1,21 @@
+<html>
+<SCRIPT LANGUAGE="javascript" src="%%RestoreScript%%">
+</SCRIPT>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>.small{font-family:arial;font-size:10pt}.smallinput{font-family:arial;font-size:9pt}</style>
+<head><title>Просмотр файла</title></head>
+<body background="bg1.gif" onbeforeUnload="BeforeRestore();" onLoad="document.charset='windows-1251';" onUnload="SelfRestore();">
+<FORM name="Restore" action="%%CGIURL%%" method="post">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="hidden" name="LastScreen" value="Восстановить">
+</FORM>
+<H1>Просмотр файла</H1><BR>
+<table BORDER=0 CELLSPACING=0>
+<tr>
+<td ALIGN=CENTER>&nbsp;&nbsp;<a href="%%CGIURL%%?WorkingDirectory=%%WorkingDirectory%%&AfterFind=Просмотр" onClick="SetCanClose();">Закончить просмотр&nbsp;&nbsp;</a>&nbsp;&nbsp;
+%%Back%%
+<tr><td ALIGN=CENTER>&nbsp;&nbsp;<td ALIGN=CENTER>&nbsp;&nbsp;
+</table>
+<img src="%%FileName%%">
+</body>
+</html>

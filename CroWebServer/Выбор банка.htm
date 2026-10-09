@@ -1,0 +1,35 @@
+<html>
+<SCRIPT LANGUAGE="javascript" src="%%RestoreScript%%">
+</SCRIPT>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<META http-equiv="Set-Cookie" content="UserId=%%UserId%%">
+<head>
+<title>Выбор банка</title>
+</head>
+<body background="bg1.gif" onbeforeUnload="BeforeRestore();" onUnload="SelfRestore();">
+<FORM name="Restore" action="%%CGIURL%%" method="post">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="hidden" name="LastScreen" value="Восстановить">
+</FORM>
+<table BORDER=0 CELLSPACING=0>
+<tr><td ALIGN=CENTER><H1>Выбор банка</H1></tr>
+</table>
+<table BORDER=0 CELLSPACING=0>
+<FORM action="%%CGIURL%%" method="post" onSubmit="SetCanClose();">
+<tr><td ALIGN=RIGHT>Имя пользователя:&nbsp;&nbsp;<td ALIGN=LEFT>%%UserName%%&nbsp;&nbsp;
+<td ALIGN=LEFT><INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="submit" name="Exit" value="Конец сессии"></tr>
+</FORM>
+<tr><td><hr><td><hr><td><hr></tr>
+<FORM action="%%CGIURL%%" method="post" onSubmit="SetCanClose();">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<tr><td ALIGN=RIGHT>Номер сессии:<td ALIGN=CENTER>%%UserId%%</tr>
+<tr><td><hr><td><hr><td><hr></tr>
+</table>
+<table BORDER=0 CELLSPACING=0>
+<tr><td ALIGN=RIGHT>Список банков:<SELECT name="Bank">%%BankList%%</SELECT>
+<td ALIGN=RIGHT><INPUT type="submit" name="BankSelect" value="Выбрать банк"></tr>
+</table>
+</FORM>
+</body>
+</html>

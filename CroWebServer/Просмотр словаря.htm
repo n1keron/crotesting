@@ -1,0 +1,34 @@
+<html>
+<SCRIPT LANGUAGE="javascript" src="%%RestoreScript%%">
+</SCRIPT>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>.small{font-family:arial;font-size:10pt}.smallinput{font-family:arial;font-size:9pt}</style>
+<head><title>Просмотр словаря</title></head>
+<body background="bg1.gif" onbeforeUnload="BeforeRestore();" onUnload="SelfRestore();">
+<FORM name="Restore" action="%%CGIURL%%" method="post">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="hidden" name="LastScreen" value="Восстановить">
+</FORM>
+<H1>Отобрано записей %%RecordCount%%</H1><BR>
+<table BORDER=0 CELLSPACING=0>
+<tr>
+%%Prev%%
+%%ViewExit%%
+%%Next%%
+%%FindAndView%%
+</tr>
+<tr>%%HrLine%%</tr>
+</table>
+<FORM name="VocViewForm" action="%%CGIURL%%" method="post">
+<INPUT type="hidden" name="WorkingDirectory" value="%%WorkingDirectory%%">
+<INPUT type="hidden" name="BeginRecord">
+<INPUT type="hidden" name="VocCheckedView" value=%%VocCheckedView%%>
+<INPUT type="hidden" name="VocSet">
+<INPUT type="hidden" name="VocFindText">
+<INPUT style="display:none" type="submit" name="VocView">
+<table BORDER=0 CELLSPACING=0>
+%%RecordList%%
+</table>
+</FORM>
+</body>
+</html>
