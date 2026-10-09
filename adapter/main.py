@@ -8,6 +8,7 @@ from urllib.parse import urlencode, urljoin
 import requests
 from bs4 import BeautifulSoup
 from fastapi import FastAPI, HTTPException, Query, Request, Response
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 CRONOS_BASE_URL = os.getenv("CRONOS_BASE_URL", "http://127.0.0.1:8080/").rstrip("/") + "/"
@@ -60,6 +61,11 @@ def title_and_text(html: str) -> dict[str, str]:
         "title": soup.title.get_text(" ", strip=True) if soup.title else "",
         "text": soup.get_text("\n", strip=True),
     }
+
+
+@app.get("/", include_in_schema=False)
+def ui() -> FileResponse:
+    return FileResponse(os.path.join(os.path.dirname(__file__), "ui.html"), media_type="text/html; charset=utf-8")
 
 
 @app.get("/health")
