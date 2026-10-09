@@ -266,7 +266,7 @@ def search(body: SearchRequest, request: Request) -> dict[str, Any]:
 
 class PreviewRequest(BaseModel):
     working_directory: str = Field(min_length=1, max_length=2048)
-    view_rows: int = Field(default=20, ge=1, le=500)
+    view_rows: int = Field(default=1000, ge=1, le=5000)
 
 
 @app.post("/api/search/preview")
