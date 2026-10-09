@@ -33,6 +33,13 @@ class SelectBankRequest(BaseModel):
     bank: str = Field(min_length=1, max_length=256)
 
 
+class SelectBaseRequest(BaseModel):
+    working_directory: str = Field(min_length=1, max_length=2048)
+    base: str = Field(min_length=1, max_length=256)
+    request_type: str = Field(default="Simple", pattern="^(Simple|Complex|Input)$")
+    view_rows: int = Field(default=20, ge=1, le=500)
+
+
 def get_session(token: str | None) -> requests.Session:
     if not token or token not in _sessions:
         raise HTTPException(status_code=401, detail="Сначала выполните вход в CronosPRO")
@@ -166,6 +173,35 @@ def select_bank(body: SelectBankRequest, request: Request) -> dict[str, Any]:
         "text": parsed["text"],
         "working_directory": working_directory,
     }
+
+
+@app.post("/api/session/base-options")
+def base_options(request: Request, working_directory: str = Query(min_length=1, max_length=2048)) -> dict[str, Any]:
+    session = get_session(request.cookies.get("cronos_adapter_session"))
+    payload = {"WorkingDirectory": working_directory, "SelectBase": "Выбор базы/запроса по образцу"}
+    encoded_payload = urlencode(payload, encoding="cp1251", errors="replace").encode("ascii")
+    result = cronos_request(session, "POST", "CroInternal", data=encoded_payload, headers={"Content-Type": "application/x-www-form-urlencoded"})
+    html = decode_html(result)
+    parsed = title_and_text(html)
+    soup = BeautifulSoup(html, "html.parser")
+    directory = next((el.get("value", "") for el in soup.select('input[name="WorkingDirectory"]') if el.get("value")), working_directory)
+    bases = [{"value": o.get("value", ""), "label": o.get_text(" ", strip=True)} for o in soup.select('select[name="Base"] option') if o.get("value")]
+    requests_list = [{"value": o.get("value", ""), "label": o.get_text(" ", strip=True)} for o in soup.select('select[name="QBE"] option') if o.get("value")]
+    return {"title": parsed["title"], "text": parsed["text"], "working_directory": directory, "bases": bases, "sample_requests": requests_list}
+
+
+@app.post("/api/session/choose-base")
+def choose_base(body: SelectBaseRequest, request: Request) -> dict[str, Any]:
+    session = get_session(request.cookies.get("cronos_adapter_session"))
+    payload = {"WorkingDirectory": body.working_directory, "Base": body.base, "ReqType": body.request_type, "ViewRows": str(body.view_rows), "BaseSelect": "Выбрать базу"}
+    encoded_payload = urlencode(payload, encoding="cp1251", errors="replace").encode("ascii")
+    result = cronos_request(session, "POST", "CroInternal", data=encoded_payload, headers={"Content-Type": "application/x-www-form-urlencoded"})
+    html = decode_html(result)
+    parsed = title_and_text(html)
+    soup = BeautifulSoup(html, "html.parser")
+    directory = next((el.get("value", "") for el in soup.select('input[name="WorkingDirectory"]') if el.get("value")), body.working_directory)
+    fields = [{"name": el.get("name", ""), "type": el.get("type", "text"), "value": el.get("value", ""), "label": (el.find_previous("td").get_text(" ", strip=True) if el.find_previous("td") else el.get("name", ""))} for el in soup.select('input[name^="Field"], select[name^="Field"]')]
+    return {"title": parsed["title"], "text": parsed["text"], "working_directory": directory, "fields": fields, "base_selected": bool(soup.select('input[name="SimpleFind"]'))}
 
 
 @app.post("/api/search")
