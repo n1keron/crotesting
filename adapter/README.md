@@ -34,7 +34,7 @@ Initial adapter for a custom UI over the installed CronosPRO 6.4 web interface.
 
 - `GET /health`
 - `POST /api/session/login` — JSON: `{"username":"…","password":"…"}`
-- `POST /api/search` — JSON: `{"working_directory":"…","fields":{"Field1":"…"}}`; send `X-Cronos-Session` with the session token if using the API directly.
+- `POST /api/search` — JSON: `{"working_directory":"…","fields":{"Field1":"…"}}`; the adapter stores its session token in an HttpOnly cookie, which the browser sends automatically.
 - `GET /api/search/status?working_directory=…`
 - `GET /api/record?working_directory=…&base=1&sysNum=1`
 - `POST /api/session/logout`
