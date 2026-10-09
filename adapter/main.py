@@ -190,6 +190,46 @@ def base_options(request: Request, working_directory: str = Query(min_length=1, 
     return {"title": parsed["title"], "text": parsed["text"], "working_directory": directory, "bases": bases, "sample_requests": requests_list}
 
 
+
+def cronos_field_label(element: Any) -> str:
+    """Resolve the human-readable caption for a CronosPRO search control."""
+    name = element.get("name", "")
+    # Explicit HTML labels and accessible captions are the most reliable source.
+    explicit = element.get("aria-label") or element.get("title")
+    if explicit and explicit.strip():
+        return explicit.strip()
+    soup = element if isinstance(element, BeautifulSoup) else element
+    label = soup.find("label", attrs={"for": name}) if hasattr(soup, "find") else None
+    if label:
+        text = label.get_text(" ", strip=True)
+        if text:
+            return text
+
+    row = element.find_parent("tr")
+    if row:
+        cells = row.find_all(["td", "th"], recursive=False)
+        current_cell = element.find_parent(["td", "th"])
+        if current_cell in cells:
+            index = cells.index(current_cell)
+            # Walk from the closest preceding cell outward; ignore technical IDs.
+            for cell in reversed(cells[:index]):
+                text = cell.get_text(" ", strip=True).strip(" :：\t\r\n")
+                if text and not __import__("re").fullmatch(r"Field\\d+", text, flags=__import__("re").I):
+                    return text
+        # Some CronosPRO templates put the caption and input in the same cell.
+        cell_text = current_cell.get_text(" ", strip=True) if current_cell else ""
+        for candidate in (cell_text, row.get_text(" ", strip=True)):
+            candidate = candidate.strip(" :：\t\r\n")
+            if candidate and candidate != name and not __import__("re").fullmatch(r"Field\\d+", candidate, flags=__import__("re").I):
+                return candidate
+
+    previous = element.find_previous(string=True)
+    if previous:
+        text = str(previous).strip(" :：\t\r\n")
+        if text and text != name and not __import__("re").fullmatch(r"Field\\d+", text, flags=__import__("re").I):
+            return text
+    return name
+
 @app.post("/api/session/choose-base")
 def choose_base(body: SelectBaseRequest, request: Request) -> dict[str, Any]:
     session = get_session(request.cookies.get("cronos_adapter_session"))
@@ -200,7 +240,7 @@ def choose_base(body: SelectBaseRequest, request: Request) -> dict[str, Any]:
     parsed = title_and_text(html)
     soup = BeautifulSoup(html, "html.parser")
     directory = next((el.get("value", "") for el in soup.select('input[name="WorkingDirectory"]') if el.get("value")), body.working_directory)
-    fields = [{"name": el.get("name", ""), "type": el.get("type", "text"), "value": el.get("value", ""), "label": (el.find_previous("td").get_text(" ", strip=True) if el.find_previous("td") else el.get("name", ""))} for el in soup.select('input[name^="Field"], select[name^="Field"]')]
+    fields = [{"name": el.get("name", ""), "type": el.get("type", "text"), "value": el.get("value", ""), "label": cronos_field_label(el)} for el in soup.select('input[name^="Field"], select[name^="Field"]')]
     return {"title": parsed["title"], "text": parsed["text"], "working_directory": directory, "fields": fields, "base_selected": bool(soup.select('input[name="SimpleFind"]'))}
 
 
