@@ -255,7 +255,11 @@ def search(body: SearchRequest, request: Request) -> dict[str, Any]:
         if not name.startswith("Field") or not name[5:].isdigit():
             raise HTTPException(status_code=400, detail=f"Недопустимое поле поиска: {name}")
         payload[name] = value
-    result = cronos_request(session, "POST", "CroInternal", data=payload)
+    encoded_payload = urlencode(payload, encoding="cp1251", errors="replace").encode("ascii")
+    result = cronos_request(
+        session, "POST", "CroInternal", data=encoded_payload,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+    )
     parsed = title_and_text(decode_html(result))
     return {"title": parsed["title"], "text": parsed["text"]}
 
