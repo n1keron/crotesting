@@ -27,6 +27,11 @@ class SearchRequest(BaseModel):
     fields: dict[str, str] = Field(default_factory=dict)
 
 
+class SelectBankRequest(BaseModel):
+    working_directory: str = Field(min_length=1, max_length=2048)
+    bank: str = Field(min_length=1, max_length=256)
+
+
 def get_session(token: str | None) -> requests.Session:
     if not token or token not in _sessions:
         raise HTTPException(status_code=401, detail="Сначала выполните вход в CronosPRO")
@@ -108,10 +113,52 @@ def login(body: LoginRequest, response: Response) -> dict[str, str]:
     token = secrets.token_urlsafe(32)
     _sessions[token] = session
     response.set_cookie("cronos_adapter_session", token, httponly=True, samesite="strict")
+    result_soup = BeautifulSoup(result_html, "html.parser")
+    working_directory = next(
+        (el.get("value", "") for el in result_soup.select('input[name="WorkingDirectory"]') if el.get("value")),
+        "",
+    )
+    banks = [
+        {"value": option.get("value", ""), "label": option.get_text(" ", strip=True)}
+        for option in result_soup.select('select[name="Bank"] option')
+        if option.get("value")
+    ]
     return {
         "status": "submitted",
         "page_title": result_text["title"],
-        "message": "Форма отправлена. Убедитесь, что CronosPRO открыл рабочую сессию.",
+        "working_directory": working_directory,
+        "banks": banks,
+        "message": "Форма отправлена. Если показан экран выбора банка, выберите банк перед поиском.",
+    }
+
+
+@app.post("/api/session/select-bank")
+def select_bank(body: SelectBankRequest, request: Request) -> dict[str, Any]:
+    session = get_session(request.cookies.get("cronos_adapter_session"))
+    payload = {
+        "WorkingDirectory": body.working_directory,
+        "Bank": body.bank,
+        "BankSelect": "Выбрать банк",
+    }
+    encoded_payload = urlencode(payload, encoding="cp1251", errors="replace").encode("ascii")
+    result = cronos_request(
+        session,
+        "POST",
+        "CroInternal",
+        data=encoded_payload,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+    )
+    html = decode_html(result)
+    parsed = title_and_text(html)
+    soup = BeautifulSoup(html, "html.parser")
+    working_directory = next(
+        (el.get("value", "") for el in soup.select('input[name="WorkingDirectory"]') if el.get("value")),
+        body.working_directory,
+    )
+    return {
+        "title": parsed["title"],
+        "text": parsed["text"],
+        "working_directory": working_directory,
     }
 
 
