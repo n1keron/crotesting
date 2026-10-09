@@ -290,6 +290,7 @@ def view_record(
             "WorkingDirectory": working_directory,
             "Base": base,
             "SysNum": sys_num,
+            "DeleteFiles": "1",
             "Level": "0",
             "BeginRecord": "0",
             "ViewRecord": "View",
