@@ -11,7 +11,7 @@ from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
-CRONOS_BASE_URL = os.getenv("CRONOS_BASE_URL", "http://127.0.0.1:8080/").rstrip("/") + "/"
+CRONOS_BASE_URL = os.getenv("CRONOS_BASE_URL", "http://127.0.0.1:80/").rstrip("/") + "/"
 TIMEOUT = float(os.getenv("CRONOS_TIMEOUT", "20"))
 
 app = FastAPI(title="CronosPRO read-only adapter", version="0.1.0")
